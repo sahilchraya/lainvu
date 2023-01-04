@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    <section class="p-8">
-        @inertia
-    </section>
+    @inertia
 </body>
 
 </html>

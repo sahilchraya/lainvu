@@ -1,15 +1,16 @@
 <template>
-    <div class="text-5xl text-blue-600">
-        Settings Page
-    </div>
-    <Nav />
+    <Layout>
+        <div class="text-5xl text-blue-600">
+            Settings Page
+        </div>
+    </Layout>
 </template>
 
 <script lang="ts">
-import Nav from '../Shared/Nav.vue'
+import Layout from '../Shared/Layout.vue'
 export default {
     components: {
-        Nav,
+        Layout,
     },
 }
 </script>
