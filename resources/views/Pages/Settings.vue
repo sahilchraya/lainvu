@@ -1,6 +1,6 @@
 <template>
     <div class="text-5xl text-blue-600">
-        Home Page
+        Settings Page
     </div>
     <Nav />
 </template>

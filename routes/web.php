@@ -14,8 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return inertia('Home', [
-        'name' => 'Sahil Chraya',
-        'frameworks' => ['Laravel', 'Vue', 'Inertia', 'TypeScript', 'Tailwind']
-    ]);
+    return inertia('Home');
+});
+
+Route::get('/users', function () {
+    sleep(2);
+    return inertia('Users');
+});
+
+Route::get('/settings', function () {
+    return inertia('Settings');
 });

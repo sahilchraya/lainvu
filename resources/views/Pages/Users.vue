@@ -1,6 +1,6 @@
 <template>
     <div class="text-5xl text-blue-600">
-        Home Page
+        Users Page
     </div>
     <Nav />
 </template>
