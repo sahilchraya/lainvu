@@ -1,6 +1,6 @@
 import "../css/app.css";
 import { createApp, h } from "vue";
-import { createInertiaApp } from "@inertiajs/inertia-vue3";
+import { Link, createInertiaApp } from "@inertiajs/inertia-vue3";
 import { InertiaProgress } from "@inertiajs/progress";
 
 createInertiaApp({
@@ -44,6 +44,8 @@ createInertiaApp({
     setup({ el, app, props, plugin }) {
         createApp({ render: () => h(app, props) })
             .use(plugin)
+            .component("Link", Link)
+            //TODO Link is now registered globally, To add more components, just add them here.
             .mount(el);
     },
 });

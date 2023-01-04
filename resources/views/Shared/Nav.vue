@@ -3,17 +3,17 @@
         <ul class="flex list-disc space-x-5 list-inside">
 
             <li>
-                <NavLink linkHref="/" :active="$page.component === 'Home'">
+                <NavLink linkHref="/" :active="this.$page.component === 'Home'">
                     Home
                 </NavLink>
             </li>
             <li>
-                <NavLink linkHref="/users" :active="$page.component === 'Users'">
+                <NavLink linkHref="/users" :active="this.$page.component === 'Users'">
                     Users
                 </NavLink>
             </li>
             <li>
-                <NavLink linkHref="/settings" :active="$page.component === 'Settings'">
+                <NavLink linkHref="/settings" :active="this.$page.component === 'Settings'">
                     Settings
                 </NavLink>
             </li>
