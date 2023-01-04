@@ -7,9 +7,6 @@
 
 <script lang="ts">
 export default {
-    components: {
-
-    },
     props: {
         linkHref: {
             type: String,
