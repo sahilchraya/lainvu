@@ -2,7 +2,7 @@
 
     <div>
         <div class="text-5xl text-blue-600">
-            Home Page
+            Users Page
         </div>
         <div style="margin-top:1000px ;" class="text-xl">
             The current time is {{ time }}.
