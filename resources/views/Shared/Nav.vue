@@ -2,13 +2,17 @@
     <nav class="mt-6">
         <ul class="list-disc">
             <li>
-                <Link class="text-blue-500 hover:underline text-2xl" href="/">Home</Link>
+                <Link :class="{ 'font-bold underline': $page.component === 'Home' }"
+                    class="text-blue-500 hover:underline text-2xl" href="/">Home
+                </Link>
             </li>
             <li>
-                <Link class="text-blue-500 hover:underline text-2xl" href="/users">Users</Link>
+                <Link :class="{ 'font-bold underline': $page.component === 'Users' }"
+                    class="text-blue-500 hover:underline text-2xl" href="/users">Users</Link>
             </li>
             <li>
-                <Link class="text-blue-500 hover:underline text-2xl" href="/settings">Settings</Link>
+                <Link :class="{ 'font-bold underline': $page.component === 'Settings' }"
+                    class="text-blue-500 hover:underline text-2xl" href="/settings">Settings</Link>
             </li>
             <li>
                 <Link class="text-blue-500 hover:underline text-2xl" href="/logout" :data="{ 'foo': 'bar' }"
